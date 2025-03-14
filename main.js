@@ -73,12 +73,13 @@ while ((jogadas < 9) && (fimjogo == false)) {
     jogador = (jogador === 'o') ? 'x' : 'o';
 }
 
-// (d) Exibir resultado final
-console.log("Tabuleiro Final:");
+// (d) Exibir resultado final com laço for
+console.log("\nTabuleiro Final:");
 for (i = 0; i < 3; i++) {
-    console.log(`[ ${tab[i][0]} ] [ ${tab[i][1]} ] [ ${tab[i][2]} ]`);
+    console.log(`[ ${tab[i][0]} ] [ ${tab[i][1]} ] [ ${tab[i][2]} ]`); // Exibir linha formatada
 }
 
+// Mostrar vencedor ou empate
 if (vencedor !== '') {
     console.log(`\n${vencedor} venceu!`);
 } else {
